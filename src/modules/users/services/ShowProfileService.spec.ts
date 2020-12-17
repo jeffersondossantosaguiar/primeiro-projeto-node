@@ -1,12 +1,9 @@
 import AppError from '@shared/errors/AppError'
 
-import FakeHashProvider from '../providers/HashProvider/fakes/FakeHashProvider'
 import FakeUsersRepository from '../repositories/fakes/FakeUsersRepository'
 import ShowProfileService from './ShowProfileService'
-import UpdateProfileService from './UpdateProfileService'
 
 let fakeUsersRepository: FakeUsersRepository
-let fakeHashProvider: FakeHashProvider
 let showProfile: ShowProfileService
 
 describe('UpdateProfile', () => {
