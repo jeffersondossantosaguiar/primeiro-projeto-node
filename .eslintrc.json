@@ -1,4 +1,5 @@
 {
+  "semi": ["error", "never"],
   "env": {
     "es6": true,
     "node": true,
@@ -36,11 +37,12 @@
         "ts": "never"
       }
     ],
+    "no-useless-constructor": "off",
+    "import/no-duplicates": "off"
   },
   "settings": {
     "import/resolver": {
       "typescript": {}
     }
-  },
-  "semi": ["error", "never"]
+  }
 }
