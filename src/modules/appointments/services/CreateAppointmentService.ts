@@ -5,7 +5,7 @@ import AppError from "@shared/errors/AppError"
 
 import Appointment from '../infra/typeorm/entities/Appointment'
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository'
-import INotificationRepository from '@modules/notifications/repositories/INotificiationsRepository'
+import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository'
 import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider'
 
 interface IRequest {
@@ -21,7 +21,7 @@ class CreateAppointmentService {
     private appointmentsRepository: IAppointmentsRepository,
 
     @inject('NotificationRepository')
-    private notificationRepository: INotificationRepository,
+    private notificationRepository: INotificationsRepository,
 
     @inject('CacheProvider')
     private cacheProvider: ICacheProvider,
